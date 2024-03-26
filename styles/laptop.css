@@ -1,0 +1,11 @@
+/*LAPTOPS*/
+@media screen and (min-width: 1024px) {
+  .main-container {
+    width: 960px;
+  }
+  /* -----SERVICES------ */
+  .service-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+  }
+}
