@@ -13,6 +13,10 @@ body {
   background-color: rgba(255, 228, 196, 0.836);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .blue-background {
   background-color: #405d78;
 }
@@ -20,9 +24,11 @@ body {
 .main-container {
   margin: 0 auto;
   width: calc(100% - 16px);
+
+  font-family: "Roboto";
 }
 
-/* -----HEADER---mobiles---- */
+/* -----HEADER-- */
 
 .logo {
   width: 30px;
@@ -46,25 +52,13 @@ body {
   gap: 15px;
 }
 
-/* -----LANDING SECTION---mobiles---- */
-
-.white-header {
-  color: white;
-}
-
-.section {
-  padding: 50px 0;
-}
-
-/* -----HEADER------- */
 .section-heading {
-  /* text-align: center; */
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 30px;
 }
 .company-header {
-  padding: 10px;
+  padding: 15px;
 
   background-color: rgb(127, 214, 255);
   -webkit-box-shadow: 4px 16px 14px -7px rgba(66, 68, 90, 1);
@@ -78,16 +72,25 @@ body {
   align-items: center;
 }
 
-/* -----FRONT PAGE------- */
+/* -----LANDING SECTION--- */
+
+.section {
+  padding: 50px 0;
+}
 
 .front-section {
   position: relative;
 }
+
+.white-header {
+  color: white;
+}
+
 .front-image {
   height: 574px;
   width: 1280px;
   width: 100%;
-  height: calc(100vh-40px); /* vh = viewportheight -space our website dispay*/
+  height: calc(100vh-70px);
 
   filter: brightness(70%);
   object-fit: cover;
@@ -123,22 +126,30 @@ body {
   width: fit-content;
   padding: 10px 40px;
 
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
+
   color: white;
+  font-family: "Roboto";
 
   background-color: transparent;
   border: 3px solid white;
   cursor: pointer;
 }
+
 /* -----OUR SPECIALITS------- */
 .specialist-photo {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
 
+.specialist-photo-centred {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .specialist-list {
   display: flex;
   flex-direction: column;
@@ -148,20 +159,8 @@ body {
 .specialist-item {
   display: flex;
   flex-direction: column;
-
+  text-align: left;
   gap: 20px;
-}
-
-.reverse-specialist-item {
-  text-align: center;
-}
-
-.reverse-description {
-  text-align: left;
-}
-
-.reverse-name {
-  text-align: left;
 }
 
 .specialist-info {
@@ -188,9 +187,8 @@ body {
   width: 200px;
   height: 200px;
 
-  background-color: aqua;
+  background-color: #f1f1f1;
   border: 1px solid darkgray;
-  border-radius: 10px;
 
   display: flex;
   justify-content: center;
@@ -216,7 +214,7 @@ body {
   width: 22px;
   height: 22px;
 
-  background-color: orange;
+  background-color: #e07a64;
   border-radius: 50%;
 }
 .service-type-special {

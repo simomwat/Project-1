@@ -10,10 +10,17 @@
     <link rel="stylesheet" href="./styles/laptop.css" />
     <link rel="stylesheet" href="./styles/desktop.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <script
-        src="https://kit.fontawesome.com/34ba5700e0.js" 
-        crossorigin="anonymous"></script>
-     </script>
+      src="https://kit.fontawesome.com/34ba5700e0.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Home</title>
   </head>
@@ -30,9 +37,10 @@
         </div>
         <nav>
           <ul class="nav-link">
-            <li class="nav-item">About Us</li>
-            <li class="nav-item">Offer</li>
-            <li class="nav-item">Contact</li>
+            <li class="nav-item"><a href="#about-us">About Us</a></li>
+            <li class="nav-item"><a href="#offers">Offer</a></li>
+
+            <li class="nav-contact" class="nav-item">Contact</li>
           </ul>
         </nav>
       </div>
@@ -51,57 +59,73 @@
                 Our company produces highest quality products.
               </h2>
               <p class="front-text">Don’t trust us just check us</p>
-              <button class="front-button">Our offer</button>
+
+              <a href="#offers"
+                ><button class="front-button">Our offer</button>
+              </a>
             </div>
           </div>
         </section>
-        <section class="section main-container">
+        <section id="about-us" class="section main-container">
           <h2 class="section-heading">Our specialists?</h2>
-          <ul  class="specialist-list">
+          <ul class="specialist-list">
             <li class="specialist-item">
-              <img
-                class="specialist-photo"
-                src="./assets/specialist1.webp"
-                alt="specialist Mary Dunnes"
-              />
+              <div class="specialist-photo-centred">
+                <img
+                  class="specialist-photo"
+                  src="./assets/specialist1.webp"
+                  alt="specialist Mary Dunnes"
+                />
+              </div>
               <div class="specialist-info">
                 <h3 class="specialist-name">Mary Dunnes [HR department]</h3>
                 <p class="specialist-description">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
                   nostrum, sequi eaque illum odio pariatur quia quo! Nam eius
-                  nobis quam ipsum fugit! Cumque iste dolore sit libero, et ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus voluptates similique praesentium, possimus ipsa culpa eveniet quos ut error laudantium libero quia blanditiis facilis a reprehenderit consequatur nisi, veritatis animi.
+                  nobis quam ipsum fugit! Cumque iste dolore sit libero, et ea.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ducimus voluptates similique praesentium, possimus ipsa culpa
+                  eveniet quos ut error laudantium libero quia blanditiis
+                  facilis a reprehenderit consequatur nisi, veritatis animi.
                 </p>
               </div>
             </li>
-          
-            <li class="specialist-item reverse-specialist-item">
-              <img
-                class="specialist-photo"
-                src="./assets/specialist2.jpg"
-                alt="specialist John Canning"
-              />
-              <div class="specialist-info ">
-                <h3 class="specialist-name reverse-name">
-                  John Canning [Accounts department]
-                </h3>
-                <p class="specialist-description reverse-description">
+            <li class="specialist-item">
+              <div class="specialist-photo-centred">
+                <img
+                  class="specialist-photo"
+                  src="./assets/specialist2.jpg"
+                  alt="specialist Mary Dunnes"
+                />
+              </div>
+              <div class="specialist-info">
+                <h3 class="specialist-name">Matthew Blair [IT department]</h3>
+                <p class="specialist-description">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
                   nostrum, sequi eaque illum odio pariatur quia quo! Nam eius
-                  nobis quam ipsum fugit! Cumque iste dolore sit libero, et ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, non! Inventore rerum molestias voluptatem quae perferendis nesciunt saepe cumque dicta pariatur. Enim expedita omnis exercitationem vel magnam cum molestias error.
+                  nobis quam ipsum fugit! Cumque iste dolore sit libero, et ea.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ducimus voluptates similique praesentium, possimus ipsa culpa
+                  eveniet quos ut error laudantium libero quia blanditiis
+                  facilis a reprehenderit consequatur nisi, veritatis animi.
                 </p>
               </div>
             </li>
           </ul>
         </section>
-        <section class="section blue-background">
+        <section id="offers" class="section blue-background">
           <div class="main-container">
             <h2 class="section-heading white-header">
               What our company offers?
             </h2>
 
             <div class="service-grid">
-              <div class="service-type service-type-new">Service1<p class="service-type-special">(new!)</p><span class="new-dot"></span></div>
-              
+              <div class="service-type service-type-new">
+                Service1
+                <p class="service-type-special">(new!)</p>
+                <span class="new-dot"></span>
+              </div>
+
               <div class="service-type">Service2</div>
               <div class="service-type">Service3</div>
               <div class="service-type">Service4</div>
@@ -113,14 +137,15 @@
       </article>
     </main>
     <footer class="page-footer">
-        <div class="main-container footer-contents">
-            <p class="footer-details">KesMak Company Ltd; All rights reserved, 2024</p>
-            <div  class="footer-icons">
-                <i class="footer-icon fa-brands fa-instagram"></i>
-                <i class="footer-icon fa-brands fa-square-facebook"></i>
-
-            </div>
+      <div class="main-container footer-contents">
+        <p class="footer-details">
+          KesMak Company Ltd; All rights reserved, 2024
+        </p>
+        <div class="footer-icons">
+          <i class="footer-icon fa-brands fa-instagram"></i>
+          <i class="footer-icon fa-brands fa-square-facebook"></i>
         </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -23,9 +23,15 @@
     font-weight: 200;
     cursor: pointer;
   }
+
+  .nav-contact {
+    color: gray;
+    cursor: not-allowed;
+  }
+
   /* -----LANDING SECTION------ */
   .front-heading {
-    width: 500px;
+    width: 550px;
   }
   .front-heading {
     font-size: 36px;
@@ -40,25 +46,14 @@
   }
 
   /* -----OUR SPECIALITS------- */
-  .specialist-photo {
-    width: 200px;
-    height: 200px;
-  }
 
   .specialist-item {
     flex-direction: row;
     gap: 60px;
   }
 
-  .reverse-specialist-item {
+  .specialist-item:nth-of-type(even) {
     flex-direction: row-reverse;
-  }
-
-  .reverse-description {
-    text-align: right;
-  }
-
-  .reverse-name {
     text-align: right;
   }
 

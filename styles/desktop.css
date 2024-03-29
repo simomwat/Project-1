@@ -1,3 +1,22 @@
 /*DESKTOPS*/
 @media screen and (min-width: 1440px) {
+  /*Hover effects - Landing button */
+  .front-button {
+    transition: all 1s ease-in-out;
+  }
+
+  .front-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /*Hover effects -services */
+
+  .service-type {
+    transition: all 0.5s linear;
+  }
+
+  .service-type:hover {
+    transform: scale(1.05);
+  }
 }
