@@ -221,7 +221,8 @@ html {
   font-size: 14px;
 }
 /* -----FOOTER------- */
-footer {
+
+.page-footer {
   background-color: #4e4e4e;
   padding: 10px 0;
 }
