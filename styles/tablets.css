@@ -18,9 +18,14 @@
     gap: 15px;
   }
 
+  a:link {
+    text-decoration: none;
+  }
+
   .nav-item {
     font-size: 16px;
     font-weight: 200;
+
     cursor: pointer;
   }
 

@@ -24,8 +24,10 @@ html {
 .main-container {
   margin: 0 auto;
   width: calc(100% - 16px);
+}
 
-  font-family: "Roboto";
+a:link {
+  text-decoration: none;
 }
 
 /* -----HEADER-- */
@@ -130,7 +132,6 @@ html {
   font-weight: 700;
 
   color: white;
-  font-family: "Roboto";
 
   background-color: transparent;
   border: 3px solid white;
